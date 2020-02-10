@@ -1,0 +1,1025 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+  }
+
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .main-container {
+    width: 100%;
+    background: rgb(30, 29, 31);
+    position: absolute;
+    top: 50px;
+  }
+
+  .btn {
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid rgb(177, 177, 177);
+    outline: none;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+  }
+
+  .btn a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+
+  .btn:hover {
+    background-color: #d31266;
+  }
+
+
+  p {
+    color: rgb(209, 209, 209);
+  }
+
+  hr {
+    width: 80%;
+  }
+ 
+  .social-media i {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    position: relative;
+    top: 20px;
+    left: 20%;
+  }
+  .social-media i:hover {
+    color:#d31266 ;
+   transition: 0.5s;
+   cursor: pointer;
+  }
+
+
+  /* navigation styling */
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  
+  header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    list-style: none;
+    position: relative;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    top: 10px;
+  }
+  
+  header nav ul li.sub_menu::before {
+    position: absolute;
+    content: "\f0d7";
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    line-height: 50px;
+    color: #fff;
+    right: 5px;
+  }
+  
+  header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+  }
+  
+  header nav ul li.active ul
+  
+  header nav ul li:hover ul {
+    display: block;
+  }
+  
+  header nav ul li ul li {
+    display: block;
+    width: 200px;
+  }
+  
+  header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border: 1px solid transparent;
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    color: rgb(209, 209, 209);
+    border-bottom: 1px solid #d31266;
+    transition: 0.5s;
+  }
+  
+  .menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  h1 {
+    color: #fff;
+  }
+
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 0 20px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    header nav {
+      position: absolute;
+      width: 50%;
+      height: calc(100vh - 50px);
+      background: #333;
+      top: 50px;
+      left: -50%;
+      transition: 0.5s;
+      z-index: 100;
+    }
+  
+    header nav.active {
+      left: 0;
+    }
+  
+    header nav ul {
+      display: block;
+      text-align: left;
+    }
+  
+    header nav ul li a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+
+
+
+ /* class -profile styling --- */
+
+  /* --------------mobile styling ------(portrait)------------------------ */
+
+  .btn {
+    width: 70%;
+    position: relative;
+    top: 10px;
+  }
+
+ .card hr {
+   width: 100%;
+ }
+
+
+  .hero {
+    height: 30vh;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -0px;
+  }
+
+  .times {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .times i {
+    padding: 5px;
+  }
+
+ .times h2 {
+   color: #fff;
+   font-size: 0.9rem;
+   position: relative;
+   top: -10px;
+ }
+
+ .times hr {
+   position: relative;
+   top: -10px;
+   color: #d31266;
+ }
+
+
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+  }
+
+  .hero-overlay h1 {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+
+  .class-grid {
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .card {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: rgb(51, 51, 51);
+  }
+
+ 
+  .section-1 .card:nth-child(2) {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .share-class i {
+    font-size: 3rem;
+    padding: 0.5rem;  
+  }
+
+  .section-1 .card:nth-child(3)
+ {
+   height: 450px;
+ }
+  .section-2 .card:first-child{
+    height: 500px;
+  }
+
+  .class-profile--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .form-container {
+    text-align: center;
+  }
+
+ input {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  .card-header {
+    width: 100%;
+    background-color: #d31266;
+  }
+
+  .section-2 .card-header:first-child {
+    height: 20%; 
+  }
+  .section-2 .card-header:first-child h1 {
+    position: relative;
+    top: 10px;
+  }
+  
+  
+  .section-2 .card:nth-child(2){
+   height: 250px;
+ } 
+
+
+
+  .trainer-rounded {
+    width: 50%;
+    height: 150%;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+  }
+
+  .trainer-rounded img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+
+  .card-header h1 {
+    padding: 0.5rem;
+  }
+
+  .form-container {
+    position: relative;
+    top: 20px;
+  }
+
+  .card-body--detail {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(209, 209, 209);
+  }
+  
+
+  .other-classes--title {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .other-classes--title hr {
+    color:#d31266;
+  }
+
+  .other-classes .card {
+    height: 200px;
+    background-color: rgb(70, 60, 60);
+    position: relative;
+  }
+
+  .other-classes .card:first-child{
+    height: 200px;
+  }
+
+  
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+ 
+  }
+
+  .class-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 3rem;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+  .footer .card {
+    height: 200px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    background: transparent;
+  }
+ 
+  .footer h3 {
+    color: #d31266;
+  }
+ 
+  .footer .card ul li {
+    list-style: none;
+    margin-bottom: 10px;
+
+  }
+
+  .subscribe {
+    padding: 0.8rem;
+    background-color: rgb(54, 54, 54);
+    outline: none;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 20px;
+    width: 90%;
+    color: #fff;
+  }
+
+  /* ---------------mobile styling (landscape)------------------------------ */
+
+  @media only screen and (min-width:320px) and (max-width:768px) and (orientation:landscape) {
+
+.btn {
+  width: 50%;
+}
+
+.subsection {
+  width: 95%;
+}
+
+    .hero {
+      height: 50vh;
+      margin-bottom: 20px;
+    }
+
+    .class-profile--img {
+      width: 100%;
+      object-position: 0px 0px;
+    }
+
+    .section-1 .card:first-child{
+      height: 70vh;
+    }
+
+    input {
+      padding: 0.5rem;
+    }
+
+    textarea {
+      width: 95%;
+    }
+
+    .trainer-rounded {
+      width: 30%;
+    }
+
+    .section-2 .card:first-child{
+      height: 450px;
+    }
+
+    .card-body--detail {
+      position: relative;
+      top: 10px;
+    }
+
+    .card-body--detail p {
+      padding-bottom: 10px;
+    }
+
+    
+    .other-classes--title {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+
+    .other-classes .card:first-child,
+    .other-classes .card:nth-child(2){
+      height: 250px;
+    }
+
+
+   
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0px -50px;
+    }
+
+    .social-media i {
+      font-size: 3rem;
+      position: relative;
+      left: 150px;
+      padding: 1rem;
+    }
+  }
+
+
+ 
+
+   /* ----------------------tablet styling------(portrait) */
+    
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+
+    .btn {
+      width: 30%;
+      position: relative;
+      top: 10px;
+    }
+
+    .subsection {
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+
+    .card-body--detail {
+      text-align: center;
+      width: 85%;
+      line-height: 1.5rem;
+    }
+
+    .hero {
+      height: 20vh;
+    }
+    .class-grid {
+      width:95%
+    }
+    .section-1 .card:first-child {
+      height: 300px;
+    }
+
+    .section-1 .card:nth-child(2) {
+      width: 95%;
+      height: auto;
+    }
+
+    .section-1 .card:nth-child(3) {
+      height: 500px;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    
+
+    textarea {
+      height: 200px;
+      width: 92%;
+      padding: 0;
+    }
+
+    .class-profile--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0px -30px;
+    }
+
+    .trainer-rounded {
+      width: 24%;
+      height: 180%;
+    }
+
+   
+
+    .section-2 .card:first-child {
+      height: 450px;
+    }
+    .section-2 .card-body--detail {
+      position: relative;
+      top:0px;
+    }
+
+    .section-2 .card:nth-child(2){
+  height: 250px;
+ }
+
+    .section-2 .card-header {
+      height: 30%; 
+    }
+    .section-2 .card-header:nth-child(1) {
+     height:20%;
+    }
+
+    .other-classes--title {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    .other-classes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .other-classes .card {
+      width: 45%;
+    }
+
+    .other-classes .card:first-child{
+      height: 250px;
+    }
+    .other-classes .card:nth-child(2){
+      height: 250px;
+    }
+  
+
+    .footer {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .footer .card ul li {
+        position: relative;
+        right: 30px;
+        font-size: 0.8rem;
+        color: rgb(209, 209, 209);
+    }
+
+    .social-media i {
+      font-size: 2rem;
+      position: relative;
+      left: 10px;
+      padding: 0.5rem;
+    }
+  
+  }
+
+  /* -------tablet landscape--- */
+
+  @media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    
+    .btn {
+      width: 50%;
+      padding: 1rem;
+      position: relative;
+      top: 0px;
+    }
+    .card-body--detail {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    
+    .class-grid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .section-1 {
+      width: 60%;
+    }
+
+    .section-2 {
+      width: 40%;
+    }
+
+    .section-2 .card {
+      width: 80%;
+      text-align: center;
+    }
+
+    .section-2 .card:first-child{
+      height: 500px;
+    }
+
+    .section-2 .card:first-child p {
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .form-container .btn {
+      width: 80%;
+      font-size: 1rem;
+      position: relative;
+      top: 10px;
+    }
+
+    .trainer-rounded {
+      width: 45%;
+      height: 140%;
+    }
+
+    .other-classes {
+      display: flex;
+      flex-direction: column;
+    }
+    .other-classes .card {
+      width: 80%;
+      height: 200px;
+    }
+
+    .other-classes .card:first-child{
+      height: 200px;
+    }
+
+    .trainer-rounded {
+      width: 50%;
+    }
+
+    .footer {
+      width: 100%;
+    }
+
+    .footer .subsection {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .footer .card {
+      width: 100%;
+    }
+
+    .footer ul li {
+      position: relative;
+      right: 40px;
+      
+    }
+  }
+
+  /* -----------------desktop styling---------------------------------- */
+
+  
+  @media only screen and (min-width:1080px) {
+
+   
+  
+
+  .main-container {
+    width: 100%;
+    background: rgb(30, 29, 31);
+    position: absolute;
+    top: 50px;
+  }
+
+  .subsection {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.logo {
+  border: 2px solid rgba(209,209,209);
+  width: 10%;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo p {
+  font-size: 1.2rem;
+  position: relative;
+  top: -20px;
+}
+
+  .hero  {
+      height: 30vh;
+  }
+
+
+  .class-grid {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .class-profile--img {
+    object-position: 0px -40px;
+  }
+
+
+  .section-1 {
+    width: 70%;
+  }
+  
+
+  .section-1 .card:nth-child(2) {
+    height: 320px;
+  }
+  .section-1 .card:nth-child(3) {
+    height: 500px;
+  }
+
+  .section-2 {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 100%;
+    height: 400px;
+    background: rgb(50, 49, 51);
+    margin-bottom: 10px;
+  }
+
+  .section-1 .card{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+
+  .share-class  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .share-title {
+    width: 70%;
+  }
+
+  .share-title h2 {
+    font-size: 1rem;
+    position: relative;
+    float: left;
+    top: 20px;
+    text-transform: uppercase;
+  }
+
+  .class-social {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+  .class-social i {
+    font-size: 2rem;
+    position: relative;
+    float: right;
+    top: 15px;
+    left: 100px;
+    padding: 0.5rem;
+    transition: 0.5s;
+  }
+
+  .class-social i:hover {
+    color:#d31266 ;
+    cursor: pointer;
+  }
+  .section-2 .card {
+    width: 70%;
+    height: 400px;
+    position: relative;
+    left: -50px;
+
+  }
+
+  .trainer-rounded {
+    width: 50%;
+    height: 130%;
+  }
+
+
+  .other-classes--title {
+    width: 50%;
+    position: relative;
+    left: -50px;
+
+  }
+
+  .other-classes {
+    width: 100%;
+    height: 30%;
+  }
+
+  .other-classes-grid {
+    display: flex;
+    flex-direction: row;
+
+  }
+  .other-classes .card {
+    width: 70%;
+    height: 200px;
+  }
+
+  textarea {
+    width: 92%;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .form-container .btn {
+    width: 40%;
+    font-size: 1rem;
+    position: relative;
+    left: -25%;
+  }
+
+  .footer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .footer ul li {
+    position: relative;
+    right: 40px;
+    color: rgb(209, 209, 209);
+  }
+
+  .footer p {
+    font-size: 1.2rem;
+  }
+  
+  }
+
+
+  @media only screen and (min-width: 1200px) {
+
+    .hero-overlay h1 {
+      width: 30%;
+      font-size: 4rem;
+    }
+
+    .class-profile--img {
+      object-position: 0px -80px;
+    }
+
+    
+    .trainer-rounded {
+      width: 45%;
+    }
+
+    .section-1 .card {
+      height: 600px;
+    }
+
+    .section-1 .card:nth-child(2) {
+      width: 92%;
+    }
+
+
+    .section-2 .card {
+      width: 60%;
+      position: relative;
+      left: -80px;
+    }
+
+    .other-classes--title {
+      position: relative;
+      left: -80px;
+    }
+
+    .form-container .btn {
+      width: 40%;
+      font-size: 1rem;
+    }
+
+    
+
+    .footer {
+      width: 80%;
+      margin: 0 auto;  
+    }
+
+    .footer .subsection {
+      width: 100%;
+    }
+
+    .social-media i {
+      padding: 1rem;
+      font-size: 2.5rem;
+    }
+
+  }

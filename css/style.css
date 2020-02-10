@@ -1,0 +1,1098 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+  }
+
+  hr {
+    width: 20%;
+    border: 1px solid #d13266;
+  }
+
+  
+
+  .headline-text {
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+  }
+
+  p {
+    color: rgb(209, 209, 209);
+  }
+
+  .btn {
+    padding: 0.5rem;
+    width: 50%;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    margin: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+  }
+
+  .btn:hover {
+    background-color: #d31266;
+  }
+
+  .social-media i {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    position: relative;
+    top: 20px;
+    left: 20%;
+  }
+  .social-media i:hover {
+    color:#d31266 ;
+   transition: 0.5s;
+   cursor: pointer;
+  }
+
+  
+
+  /* navigation styling */
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  
+  header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    list-style: none;
+    position: relative;
+    top: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  header nav ul li.sub_menu::before {
+    position: absolute;
+    content: "\f0d7";
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    line-height: 50px;
+    color: #fff;
+    right: 5px;
+  }
+  
+  header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+  }
+  
+  header nav ul li.active ul
+  
+  header nav ul li:hover ul {
+    display: block;
+  }
+  
+  header nav ul li ul li {
+    display: block;
+    width: 200px;
+  }
+  header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border: 1px solid transparent;
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    color: rgb(209, 209, 209);
+    border-bottom: 1px solid #d31266;
+    transition: 0.5s;
+  }
+  
+  .menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  h1 {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    
+    header {
+      padding: 0 20px;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: relative;
+      top: 5px;
+    }
+  
+    header nav {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 50px);
+      background: #333;
+      top: 62px;
+      left: -100%;
+      transition: 0.5s;
+    }
+  
+    header nav.active {
+      left: 0;
+    }
+  
+    header nav ul {
+      display: block;
+      text-align: center;
+    }
+  
+    header nav ul li a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      font-size: 2rem;
+      position: relative;
+      padding-bottom: 30px;
+    }
+  }
+
+
+  /* -----------main page styling-------------- */
+  /* --mobile------(portrait) */
+
+  .main-container {
+    width: 100%;
+    background: rgb(21, 20, 22);
+    position: absolute;
+    top: 50px;
+  }
+
+  section {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+  .headline-text {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    border: 1px solid rgba(209,209,209);
+    width: 50%;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+  }
+
+  .logo p {
+    font-size: 1rem;
+    position: relative;
+    top: -15px;
+    padding: 0;
+  }
+
+  .subsection {
+      width: 95%;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .hero {
+    background: greenyellow;
+    height: 90vh;
+    position: relative;
+  }
+  
+  .hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-overlay,
+  .about-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+  
+  .hero-text {
+    color: #fff;
+    width: 70%;
+    height: 50%;
+    border: 3px solid #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  
+  
+
+  .about-us .subsection {
+      height: 40vh;
+  }
+
+  .about-us {
+    position: relative;
+    height: 50vh;
+  }
+
+   
+   slider {
+    display: block;
+    width: 90%;
+    height: 90%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   }
+   
+   slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+   }
+   
+   
+   slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(../assets/photos/aerobics.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+   slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(../assets/photos/deadlift.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+   slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(../assets/photos/punch-bag.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+   slide:nth-child(4){
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(../assets/photos/crunch.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+
+   .title {
+       width: 90%;
+       height: 90%;
+       position: relative;
+       top: 10px;
+       border: 1px solid #fff;
+       margin: 0 auto;
+   }
+
+   .title hr {
+     position: relative;
+     top: -10px;
+   }
+
+   .slide-info h6 {
+     width: 100%;
+     font-size: 0.8rem;
+     color: #fff;
+     font-weight: 300;
+     position: relative;
+     top: -30px;
+   }
+
+   
+   slide p {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    margin-top: 10px;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+   }
+
+   slide ul li {
+     color: #fff;
+     position: absolute; 
+     top: 10%;
+   }
+   
+   @keyframes slide {
+    0% { left: 100%; width: 100%; }
+    5% { left: 0%; }
+    25% { left: 0%; }
+    30% { left: -100%; width: 100%; }
+    30.0001% { left: -100%; width: 0%; }
+    100% { left: 100%; width: 0%; }
+   }
+
+  
+  .card {
+      width: 90%;
+      height: 300px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      position: relative;
+  }
+
+ 
+
+ .class-img,
+ .trainer-img,
+ .gall-img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .class-overlay,
+ .trainer-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+
+ 
+ .class-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 3rem;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+
+ .trainer-img {
+   object-position: 0px 0px;
+ }
+
+
+ .blog .card {
+   display: flex;
+   flex-direction: column;
+   height: 400px;
+   background-color: rgb(35, 32, 41);
+ }
+ 
+
+ .blog-image {
+   width: 100%;
+   height: 50%;
+ }
+
+ .blog-img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .blog-text {
+   width: 100%;
+   height: 50%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+ }
+
+.blog-text h1,
+.blog-text hr {
+  position: relative;
+  top: 10%;
+}
+ .blog-text p {
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+ }
+ 
+
+ .blog-text hr {
+   width: 20%;
+   background-color: #d31266;
+   color: #d31266;
+ }
+
+ .gallery .card {
+   height: 300px;
+   margin-bottom: 2px;
+ }
+
+
+
+ .footer .card {
+   height: 200px;
+   color: #fff;
+   text-align: left;
+   position: relative;
+ }
+
+ .footer h3 {
+   color: #d31266;
+ }
+
+ .footer .card ul li {
+   list-style: none;
+   margin-bottom: 10px;
+   color: rgb(209, 209, 209);
+ }
+
+ 
+
+ .subscribe {
+   padding: 0.8rem;
+   background-color: rgb(54, 54, 54);
+   outline: none;
+   border: 1px solid rgb(163, 163, 163);
+   border-radius: 20px;
+   width: 90%;
+   color: #fff;
+ }
+
+
+
+
+  /* -----mobile landscape--- */
+
+  @media only screen and (min-width:320px) and (max-width:768px) and (orientation:landscape) {
+
+
+    header nav {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 50px);
+      background: #333;
+      top: 62px;
+      left: -100%;
+      transition: 0.5s;
+    }
+
+    header nav ul li a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      font-size: 1rem;
+      position: relative;
+      bottom: 10px;
+      padding-bottom: 0;
+    }
+
+    .logo {
+      width: 30%;
+    }
+ 
+
+    .subsection {
+        width: 95%;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    .hero-text {
+      width: 80%;
+      height: 75%;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+    }
+
+    .about-us {
+      position: relative;
+      height: 80vh;
+    }
+
+    .headline-text {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .slide-info h6 {
+      width: 100%;
+      font-size: 0.9rem;
+      color: #fff;
+      font-weight: 300;
+      position: relative;
+      top: -30px;
+    }
+
+    .social-media i {
+      font-size: 3rem;
+      padding: 1rem;
+      position: relative;
+      top: 20px;
+      left: 25%;
+    }
+
+    .subscribe {
+      position: relative;
+      top: 20px;
+    }
+
+    .social-media i {
+      font-size: 3rem;
+      position: relative;
+      left: 150px;
+      padding: 1rem;
+    }
+
+  }
+
+  /* ---tablet styling --------(portrait)*/
+
+
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    header nav {
+
+      top: 70px;
+
+    }
+
+    .logo {
+      border: 2px solid rgba(209,209,209);
+      width: 30%;
+      margin: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    .logo p {
+      font-size: 1.2rem;
+      position: relative;
+      top: -20px;
+    }
+
+    
+    section {
+      margin-bottom: 20px;
+    }
+      .hero{
+          height: 50vh;
+      }
+
+      .about-us {
+        position: relative;
+        height: 40vh;
+      }
+
+      .title {
+        width: 60%;
+        height: 70%;
+        position: relative;
+        left: -100px;
+        top: 50px;
+        border: 1px solid #fff;
+    }
+    
+ 
+
+      .slide-info h6 {
+        width: 95%;
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 300;
+        position: relative;
+        top: 0px;
+        margin: 0 auto;
+      }
+
+
+      .subsection {
+          width: 95%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+      }
+
+      .card {
+          margin-right: 10px;
+      }
+      .card:last-child{
+        margin-right: 0px;
+    }
+
+    .btn {
+      width: 30%;
+    }
+
+    .class-title {
+      width: 30%;
+    }
+
+    .class-title h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .blog p {
+      font-size: 1rem;
+    }
+
+    .footer {
+      width: 100%;
+    }
+
+    .footer p {
+      font-size: 1rem;
+    }
+
+
+    .footer .card ul li {
+        position: relative;
+        right: 30px;
+        font-size: 0.8rem;
+    }
+
+  }
+
+  @media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+      .hero,
+      .about-us {
+          height: 60vh;
+      }
+
+      header nav {
+        float: right;
+      }
+
+      .logo {
+        position: relative;
+        right: 100px;
+      }
+
+      #first-slide--info h6 {
+        width: 90%;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0 auto;
+        position: relative;
+        top: 0px;
+      }
+
+      slide p {
+        font-size: 40px;
+       }
+
+       .title {
+        width: 60%;
+        height: 70%;
+        position: relative;
+        left: -150px;
+    }
+
+       .title hr {
+         position: relative;
+         top: -30px;
+         width: 30%;
+       }
+
+      .title h6 {
+        font-size: 1rem;
+      }
+
+
+      .about-us .card {
+        background-color: rgb(148, 112, 112);
+        height: 350px;
+      }
+
+      .footer {
+        width: 100%;
+      }
+
+      .footer .card {
+        width: 100%;
+      }
+
+      .footer ul li {
+        position: relative;
+        right: 40px;
+      }
+
+      
+  }
+
+
+  @media only screen and (min-width: 1025px) and (orientation: landscape) {
+
+    .slide-info {
+      font-size: 1rem;
+    }
+
+    #first-slide--info h6 {
+      font-size: 1rem;
+      font-weight: 300;
+    } 
+  }
+
+ 
+
+  @media only screen and (min-width:1080px) {
+
+
+    p {
+      font-size: 1.2rem;
+    }
+
+
+      .subsection {
+          display: flex;
+          flex-direction: row;
+          padding: 20px;
+      }
+
+      .logo {
+        border: 2px solid rgba(209,209,209);
+        width: 10%;
+        margin: 10px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    
+      .logo p {
+        font-size: 1.2rem;
+        position: relative;
+        top: -20px;
+      }
+
+      .hero-text {
+        height: auto;
+      }
+
+      .hero-text h1 {
+        font-size: 8rem;
+        width: 100%;
+      }
+      
+      .about-us {
+        position: relative;
+        height: 80vh;
+      }
+
+      .headline {
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        position: relative;
+        top: 50px;
+      }
+
+      .gallery .headline {
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        position: relative;
+        top: 10px;
+      }
+
+       
+       slider {
+        display: block;
+        width: 80%;
+        height: 90%;
+        background-color: #1f1f1f;
+        overflow: hidden;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+       }
+       
+       slider > * {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #1f1f1f;
+        animation: slide 12s infinite;
+        overflow: hidden;
+       }
+
+       .title {
+         width: 50%;
+         position: relative;
+         top: 50%;
+         left: 10%;
+         transform: translate(-50%,-50%);
+         border: 3px solid #fff;
+         height: 70%;
+         text-align: center;
+       }
+
+       
+
+       #first-slide--info {
+         width: 90%;
+         height: 70%;
+         position: absolute;
+         left: 50%;
+         top: 60%;
+       }
+
+       #first-slide--info h6 {
+         font-size: 1rem;
+         font-weight: 300;
+       }
+
+       #slide-info--list {
+         position: relative;
+         width: 80%;
+         height: 70%;
+       }
+
+       .slide-info {
+         position: absolute;
+         width: 50%;
+         height: 50%;
+         top: 50%;
+         left: 40%;
+         transform: translate(-50%, -50%);
+         display: block;
+         text-align: center;
+       }
+
+
+       .slide-info p {
+         font-size: 3rem;
+       }
+       
+
+
+       slide p {
+        font-size: 40px;
+        text-align: center;
+        display: inline-block;
+        width: 90%;
+        height: 50%;
+        margin-top: 40px;
+        color: #fff;
+        position: relative;
+        top: 20%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+       }
+
+       .title hr {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+      }
+
+       .about-list {
+         position: absolute;
+         top: 90%;
+       }
+       
+       
+       
+      .card {
+          height: 500px;
+          margin-right: 10px;
+      }
+      .card:last-child{
+          margin-right: 0px;
+      }
+
+      .btn {
+        width: 20%;
+        padding: 1rem;
+      }
+
+      .hero-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .classes .card,
+      .trainers .card {
+        position: relative;
+        top: 0px;
+        transition: 0.5s;
+      }
+
+      .classes .card:hover,
+      .trainers .card:hover {
+        position: relative;
+        top: -20px;
+      }
+
+
+      .class-overlay,
+      .trainer-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        opacity: 0;
+        transition: 0.5s;
+      }
+      
+      .class-overlay:hover,
+      .trainer-overlay:hover {
+        opacity: 1;
+      }
+
+      
+
+      .blog .card {
+        position: relative;
+        top: 0;
+        transition: 0.5s;
+      }
+
+      .blog .card:hover {
+        background-color: rgb(55, 55, 59);
+        position: relative;
+        top: -20px;
+        cursor: pointer;
+      }
+
+      .blog-img {
+        object-position: 0px 0px;
+      }
+
+      .footer {
+        width: 80%;
+      }
+
+      .social-media i {
+        padding: 1rem;
+        font-size: 2.5rem;
+      }
+
+      
+  }
+
+
+  @media only screen and (min-width:1200px) {
+
+    .logo {
+      border: 2px solid rgba(209,209,209);
+      width: 15%;
+      margin: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    .logo p {
+      font-size: 1.2rem;
+      position: relative;
+      top: -20px;
+    }
+    #first-slide--info h6 {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+
+
+    @media only screen and (min-width: 1600px) {
+
+      /* .logo {
+        width: 10%;
+      } */
+      #first-slide--info h6 {
+        font-size: 1.8rem;
+      }
+    }
+  }

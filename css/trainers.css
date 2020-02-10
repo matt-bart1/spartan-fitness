@@ -1,0 +1,1052 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.main-container {
+  width: 100%;
+  background: rgb(15, 14, 15);
+  position: absolute;
+  top: 50px;
+}
+
+.headline {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid #d13266;
+}
+
+.headline-text {
+  width: 100%;
+  padding: 10px 0px 20px 0px;
+}
+
+p {
+  color: rgb(209, 209, 209);
+}
+
+.btn {
+  padding: 0.5rem;
+  width: 50%;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  margin: 20px;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: 'Abel', sans-serif;
+}
+
+.btn:hover {
+  background-color: #d31266;
+}
+
+.social-media i {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  position: relative;
+  top: 20px;
+  left: 20%;
+}
+.social-media i:hover {
+  color:#d31266 ;
+ transition: 0.5s;
+ cursor: pointer;
+}
+
+
+
+  /* navigation styling */
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  
+  header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    list-style: none;
+    position: relative;
+    top: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  header nav ul li.sub_menu::before {
+    position: absolute;
+    content: "\f0d7";
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    line-height: 50px;
+    color: rgb(209, 209, 209);
+    right: 5px;
+  }
+  
+  header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+  }
+  
+
+  
+  header nav ul li:hover ul {
+    display: block;
+
+  }
+  
+  header nav ul li ul li {
+    display: block;
+    width: 200px;
+  }
+  header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border: 1px solid transparent;
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    color: rgb(209, 209, 209);
+    border-bottom: 1px solid #d31266;
+    transition: 0.5s;
+  }
+  
+  .menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  h1 {
+    color: #fff;
+  }
+
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 0 20px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    header nav {
+      position: absolute;
+      width: 50%;
+      height: calc(100vh - 50px);
+      background: #333;
+      top: 50px;
+      left: -50%;
+      transition: 0.5s;
+    }
+  
+    header nav.active {
+      left: 0;
+    }
+  
+    header nav ul {
+      display: block;
+      text-align: left;
+    }
+  
+    header nav ul li a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  /* /////////////////////////////////////////////////////////////////////////////////////////// */
+  /* /////////////////////////////////////////////////////////////////////////////////////////// */
+  /* ---------------------------mobile styling (portrait)--------------------------------------- */
+  /* /////////////////////////////////////////////////////////////////////////////////////////// */
+  /* /////////////////////////////////////////////////////////////////////////////////////////// */
+  
+h1 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+
+section {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+.subsection {
+      width: 95%;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+.section-grid {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+.section-1,
+.section-2 {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1;
+    margin-bottom: 20px;
+  }
+
+ 
+.section-1 .card:nth-child(2) hr {
+    width: 30%;
+  }
+  
+.card {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 51, 51);
+  }
+
+.hero {
+      height: 30vh;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+.hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0px -0px;
+    }
+
+
+.hero-overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+.hero-overlay h1 {
+      width: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 1rem;
+      border: 3px solid #fff;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+.card-header {
+      width: 100%;
+      background-color: #d31266;
+    }
+ .card-header h1 {
+      padding: 0.5rem;
+    }
+
+.card-body--detail {
+      height: 50%;
+    }
+
+.card-body--detail {
+      width: 90%;
+      margin: 0 auto;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+    
+.trainer-social {
+      width: 100%;
+      position: relative;
+      top: 10px;
+    }
+
+.trainer-social i {
+      color: #fff;
+      padding: 1rem;
+      position: relative;
+      bottom: 30px;
+    }
+
+.trainer-profile--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0px 0px;
+    }
+
+.test-card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      background-color: rgb(36, 35, 35);
+    }
+
+.test-profile-img {
+      width:100%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+    }
+
+.test-profile-img img {
+     border-radius: 50%;
+     width: 40%;
+     height: 100%;
+     margin: 0 auto;
+    padding-top: 10px;
+    }
+
+.test-profile-img h2 {
+     color: #fff;
+     position: relative;
+    }
+
+
+.trainer-classes ul li {
+      color: rgb(209, 209, 209);
+      list-style: none;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      position: relative;
+      text-transform: uppercase;
+      left: -20px;
+    }
+
+.trainer-classes .btn {
+      position: relative;
+      top: -10px;
+    }
+
+.trainer-classes hr {
+      width: 40%;
+      position: relative;
+      left: -20px;
+    }
+
+.other-trainers h1 {
+  padding: 1rem;
+}
+
+.other-trainers hr {
+  position: relative;
+  bottom: 10px;
+}
+
+.other-trainers .card {
+  margin-bottom: 10px;
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.other-trainer--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.class-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 3rem;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer .card {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  height: 250px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.footer h3 {
+  color: #d31266;
+}
+
+.footer .card ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: rgb(209, 209, 209);
+position: relative;
+right: 20px;
+top: 30px;
+}
+
+.social-media {
+ position: relative;
+ right: 60px;
+ top: 20px;
+}
+
+.social-media i {
+  padding: 1rem;
+  position: relative;
+}
+
+
+.subscribe {
+  padding: 0.8rem;
+  background-color: rgb(54, 54, 54);
+  outline: none;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 20px;
+  width: 90%;
+  color: #fff;
+margin: 0 auto;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* -----------------------mobile styling (landscape)---------------------------------------- */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (min-width:320px) and (max-width:768px) and (orientation: landscape) {
+
+.hero {
+    height: 50vh;
+  }
+
+
+.test-profile-img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.other-trainers .card {
+  height: 300px;
+}
+
+.other-trainer--img {
+  object-position: 0px -20px;
+}
+
+
+.social-media i {
+    font-size: 3rem;
+    padding: 1.5rem;
+    position: relative;
+    top: 20px;
+    left:12%;
+  }
+
+.subscribe {
+    position: relative;
+    top: 20px;
+  }
+
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ----------------------------------------tablet styling -----------------------------------------------*/
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+/* ----------------global----------------------------- */
+.card-header {
+    width: 100%;
+  }
+.card-header h1 {
+    padding: 0.5rem;
+  }
+.card {
+    height: 300px;
+  }
+
+.subsection {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section-grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin-bottom: 20px;
+}
+
+/* ------------section styling---------------------------- */
+
+.hero {
+  height: 20vh;
+}
+.hero-overlay h1 {
+  width: 40%;
+  font-size: 3rem;
+}
+
+.section-1 .card:nth-child(2){
+  height: 350px;
+  position: relative;
+}
+
+
+.section-2 .card {
+  height: auto;
+}
+
+.section-1 .card:first-child
+{
+  height: 500px;
+}
+
+.section-2 .card:first-child {
+  height: 400px;
+}
+
+
+.trainer-classes {
+  text-align: center;
+}
+
+.trainer-classes hr {
+  width: 20%;
+  position: relative;
+  right: 10px;
+}
+
+.other-trainers {
+  grid-column: 1/4;
+}
+
+.other-trainers .card {
+  width: 30%;
+}
+
+.trainer-social i {
+  position: relative;
+  top: -80px;
+}
+
+
+
+.trainer-detail {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+}
+
+.card-body--detail{
+  font-size: 1.5rem;
+}
+.trainer-detail p {
+  font-size: 1.3rem;
+}
+
+.trainer-social{
+  position: relative;
+  top: 50px;
+}
+
+
+.test-card {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.test-profile-img {
+  width: 70%;
+}
+
+.test-card p {
+  font-size: 1rem;
+  position: relative;
+  right: 50px;
+  top: 20px;
+}
+
+.other-trainers .card {
+  height: 250px;
+  width: 45%;
+}
+
+.other-trainers .card:first-child{
+  display: none;
+}
+
+.other-trainers .subsection{
+    display: flex;
+    flex-direction: row;
+  }
+
+.footer {
+    width: 100%;
+  }
+  
+.footer .card ul li {
+      position: relative;
+      right: 30px;
+      font-size: 1rem;
+  }
+
+  .social-media {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+ 
+  .social-media i {
+    font-size: 3rem;
+    padding-right: 40px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .subscribe {
+    width: 70%;
+    position: relative;
+    top: 20px;
+  }
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ----------------------------tablet styling (landscape)--------------------------------------- */
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+.hero-overlay h1 {
+  width: 30%;
+  font-size: 3rem;
+}
+
+.section-grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+.section-1 .card:nth-child(2){
+  position: relative;
+  top: -200px;
+}
+
+.section-2 .card:first-child {
+  height: 450px;
+}
+.section-2 .card:nth-child(3){
+ height: 350px;
+}
+
+.trainer-social {
+  font-size: 0.8REM;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+  }
+
+.other-trainers .subsection,
+.footer .subsection{
+    display: flex;
+    flex-direction: row;
+  }
+
+.footer .card {
+    width: 100%;
+  }
+
+.footer ul li {
+    position: relative;
+    right: 40px;
+    color: rgb(209, 209, 209);
+  }
+
+.test-profile-img {
+    width: 120%;
+    position: relative;
+    right: 30px;
+  }
+
+.test-profile-img h2 {
+    font-size: 1rem;
+  }
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.social-media i {
+  padding: 1rem;
+ position: relative;
+ top: -10px;
+}
+
+  
+}
+
+
+
+/* ---desktop styling */
+@media only screen and (min-width:1080px) { 
+
+  P {
+    font-size: 1.2rem;
+  }
+
+
+  .btn {
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+  }
+
+h1 {
+    margin: 0;
+}
+
+  .main-container {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+  }
+
+  section {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .subsection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+  
+
+
+  .hero {
+      height: 40vh;
+      background-color: rgb(53, 53, 51);
+  }
+
+  .section-grid {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 20px;
+  }
+
+  .section-1 {
+    width: 100%;
+      grid-column: 1/2;
+  }
+
+.section-2 {
+    grid-column: 2/4;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1 .card {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+
+
+.section-1 .card:nth-child(2) {
+  height: 450px;
+  position: relative;
+  top: -100px;
+}
+
+.section-2 .card:first-child {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 400px;
+}
+.section-2 .card:nth-child(3) {
+    position: relative;
+    top: 0;
+    height: 400px;
+}
+.section-2 .card:nth-child(3) ul li {
+    margin-bottom: 20px;
+}
+
+.trainer-detail {
+  width: 100%;
+  font-size: 1.2rem;
+  position: relative;
+  top: 40px;
+}
+
+.trainer-detail p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.trainer-social {
+  position: relative;
+  top: -30px;
+  font-size: 1.2rem;
+}
+
+.test-card {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.test-profile-img {
+  width: 50%;
+
+}
+
+.test-profile--img {
+  position: relative;
+  top: 10px;
+}
+
+.test-card p {
+  width: 90%;
+  font-size: 1.2rem;
+  position: relative;
+  top: 30px;
+  left: -30px;
+}
+
+
+.trainer-social i:hover {
+  color: #d31266;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card-body--detail {
+  font-size: 2rem;
+}
+
+
+.other-trainers {
+    width: 80%;
+}
+
+.other-trainers hr {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.other-trainers .card {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 350px;
+}
+
+
+.other-trainer--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+
+.trainer-classes {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.trainer-classes ul li {
+  color: rgb(209, 209, 209);
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  position: relative;
+  left: -15px;
+}
+
+.trainer-classes .btn {
+  position: relative;
+  top: 10px;
+  width: 30%;
+}
+
+.trainer-classes hr {
+  width: 30%;
+  position: relative;
+  right: 20px;
+}
+
+
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card .overlay:hover {
+  opacity: 1;
+}
+
+.footer {
+  width: 80%;
+}
+
+.footer .card {
+  background-color: transparent;
+}
+
+
+}
+
+@media only screen and (min-width:1200px) {
+
+
+  .logo {
+    border: 2px solid rgba(209,209,209);
+    width: 10%;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .logo p {
+    font-size: 1.2rem;
+    position: relative;
+    top: -20px;
+  }
+
+  .hero-overlay h1 {
+    width: 30%;
+    font-size: 4rem;
+  }
+
+  .section-1 .card:nth-child(2) p  {
+    font-size: 2rem;
+  }
+  .section-2 .card:first-child p {
+    font-size: 1.4rem;
+  }
+  .section-2 .card:nth-child(3) {
+    height:420px
+  }
+
+  
+
+  .footer .subsection ul li {
+    position: relative;
+    top: 10px;
+  }
+  
+
+  .social-media {
+    position: relative;
+    margin: 0 auto;
+    top: -20px;
+  }
+
+  .social-media i {
+    font-size: 2.5rem;
+  }
+}
+
